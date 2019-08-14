@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 dataset = pd.read_csv('kc_house_data.csv')
 X = dataset.iloc[:50, 2].values
-y = dataset.iloc[:50, 6].values
 
 
 

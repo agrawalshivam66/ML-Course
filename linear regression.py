@@ -11,8 +11,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 dataset = pd.read_csv('kc_house_data.csv')
-X = dataset.iloc[:,2].values
-y = dataset.iloc[:, 5].values
+X = dataset.iloc[:,5].values
+y = dataset.iloc[:, 2].values
 co = dataset.iloc[:, :]
 x2=[]
 
@@ -44,14 +44,14 @@ y_pred = regressor.predict(X_test)
 plt.scatter(X_train, y_train, color = 'red')
 plt.plot(X_train, regressor.predict(X_train), color = 'blue')
 plt.title('Price vs squreft (Training set)')
-plt.xlabel('Price')
-plt.ylabel('Squareft')
+plt.ylabel('Price')
+plt.xlabel('Squareft')
 plt.show()
 
 # Visualising the Test set results
 plt.scatter(X_test, y_test, color = 'red')
 plt.plot(X_train, regressor.predict(X_train), color = 'blue')
 plt.title('Price vs squreft (Training set)')
-plt.xlabel('Price')
-plt.ylabel('Squareft')
+plt.ylabel('Price')
+plt.xlabel('Squareft')
 plt.show()
